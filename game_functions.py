@@ -2,6 +2,8 @@ import sys
 import pygame
 from bullet import Bullet
 from alien import Alien
+from time import sleep
+
 
 def check_keydown_events(event, game_settings, screen, ship, bullets):
     if event.key == pygame.K_RIGHT:
@@ -95,8 +97,17 @@ def change_fleet_direction(game_settings, aliens):
         alien.rect.y += game_settings.fleet_drop_speed
     game_settings.fleet_direction *= -1
 
-def update_aliens(game_settings, ship, aliens):
+def update_aliens(game_settings, stats, screen, ship, aliens, bullets):
     check_fleet_edges(game_settings, aliens)
     aliens.update()
     if pygame.sprite.spritecollideany(ship, aliens):
-        print("1")
+        ship_hit(game_settings, stats, screen, ship, aliens, bullets)
+
+def ship_hit(game_settings, stats, screen, ship, aliens, bullets):
+    stats.ships_left -= stats.ships_left - 1
+    aliens.empty()
+    bullets.empty()
+
+    create_fleet(game_settings, screen, ship, aliens)
+    ship.ship_center()
+    sleep(2)
