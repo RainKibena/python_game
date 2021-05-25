@@ -10,7 +10,7 @@ Rain Hans Kibena
 I coded the game mainly myself. Got a bit of help from the teacher.
 
 # Description
-The aim of the game is to kill all the invading Marttis with the space ship. The car is able to shoot as many bullets as you like. You have a total of 3 lives that you can use until you "die". If you do not die, then you are able to basically play forever.
+The aim of the game is to kill all the invading Marttis with the space ship. The ship is able to shoot as many bullets as you like. You have a total of 3 lives that you can use until you "die". If you do not die, then you are able to basically play forever.
 
 Dependencies
 You will have to import pygame if you are using pycharm for example.
