@@ -1,7 +1,7 @@
 # Game title
 "Martti Invasion"
 
-#Project Title
+# Project Title
 My first ever game I coded.
 
 # Author
@@ -28,5 +28,5 @@ Here is a link to PyCharm: https://www.jetbrains.com/pycharm/download/#section=w
 - D / RightArrow - Move right\ Spacebar - Shoot
 
 # Help
-From my testing of the game I have not found any real faults that would effect the game. If you the player do find a problem then feel free to contact me via my email : '
+From my testing of the game I have not found any real faults that would effect the game. If you the player do find a problem then feel free to contact me via my email :
 rain-hans.kibena@khk.ee
